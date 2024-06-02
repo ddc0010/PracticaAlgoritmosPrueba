@@ -8,5 +8,12 @@ public abstract class Algoritmos {
 		else 
 			return num * factorial(num - 1);
 	}
+	
+	public static int fibonacci(int num) {
+		if (num <= 1)
+			return num; 
+		else
+			return fibonacci(num-1) + fibonacci(num -2);
+	}
 
 }
