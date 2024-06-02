@@ -22,5 +22,12 @@ class TestsAlgoritmos {
 		assertEquals(FactorialEspera, FactorialObtiene);
 	}
 	
+	@Test
+	void testesPrimo() {
+		int numero = 7;
+		boolean PrimoEspera = true; 
+		boolean PrimoObtiene = Algoritmos.esPrimo(numero);
+		assertEquals(PrimoEspera, PrimoObtiene);
+	}
 
 }
