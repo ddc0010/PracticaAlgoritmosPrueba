@@ -15,5 +15,14 @@ public abstract class Algoritmos {
 		else
 			return fibonacci(num-1) + fibonacci(num -2);
 	}
+	
+	public static boolean esPrimo(int num) {
+		if (num <= 1)
+			return false; 
+		for (int i = 2; i <= Math.sqrt(num);i++) {
+			return true;
+		}
+		return false; 
+	}
 
 }
