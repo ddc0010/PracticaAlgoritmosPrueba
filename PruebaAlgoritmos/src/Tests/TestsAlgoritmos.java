@@ -14,5 +14,13 @@ class TestsAlgoritmos {
 	int FibonacciObtiene = Algoritmos.fibonacci(5);
 	assertEquals(FibonacciEspera, FibonacciObtiene);
 	}
+	
+	@Test
+	void testFactorial() {
+		int FactorialEspera = 4; 
+		int FactorialObtiene = Algoritmos.factorial(29);
+		assertEquals(FactorialEspera, FactorialObtiene);
+	}
+	
 
 }
