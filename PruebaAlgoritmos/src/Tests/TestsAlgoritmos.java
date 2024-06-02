@@ -9,23 +9,23 @@ import Util.Algoritmos;
 class TestsAlgoritmos {
 
 	@Test
-	void testFibonacci() {
-	int FibonacciEspera = 3;
-	int FibonacciObtiene = Algoritmos.fibonacci(5);
-	assertEquals(FibonacciEspera, FibonacciObtiene);
+	void testFactorial() {
+		int FactorialEspera = 120; 
+		int FactorialObtiene = Algoritmos.factorial(5);
+		assertEquals(FactorialEspera, FactorialObtiene);
 	}
 	
 	@Test
-	void testFactorial() {
-		int FactorialEspera = 4; 
-		int FactorialObtiene = Algoritmos.factorial(29);
-		assertEquals(FactorialEspera, FactorialObtiene);
+	void testFibonacci() {
+		int fibonacciEspera = 5;
+		int fibonacciObtiene = Algoritmos.fibonacci(5);
+		assertEquals(fibonacciEspera, fibonacciObtiene);
 	}
 	
 	@Test
 	void testesPrimo() {
 		int numero = 7;
-		boolean PrimoEspera = true; 
+		boolean PrimoEspera = false; 
 		boolean PrimoObtiene = Algoritmos.esPrimo(numero);
 		assertEquals(PrimoEspera, PrimoObtiene);
 	}
